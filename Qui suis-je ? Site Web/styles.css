@@ -1,0 +1,264 @@
+/* 
+*
+*
+On va séparer les sélecteurs qui sont d'ordre general 
+*
+*
+*/
+
+/* * permet de sélectionner tous les éléments*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif; /*Mettre comme police d'écriture arial dans le body*/
+    
+    font-size: 15px;/*Taille par defaut */   
+}
+
+h1 {
+    color:green;
+    font-family: 'Crete Round', serif; /*Police télécharger sur google et utilisé que sur h1*/
+     font-size: 45px;
+}
+
+h2, h3 {
+    color:red;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+h4 {
+    color: #0a74ec;
+    font-size:  20px
+}
+
+p{
+    line-height: 20px; /*hauteur de ligne dans nos paragraphe*/
+    color: #3B1B1B;
+}
+
+ul {
+    list-style: none; /*Enlever les . point sur la liste des mots*/
+}
+
+a {
+    text-decoration: none; /*Enlever le soulignement des mots*/
+    color: #444; 
+}
+
+.wrapper {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.salmon {
+    color: salmon;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+.clear {
+    clear: both;
+} /*permet d'indiquer qu'un élément doit venir se placer en dessous des éléments flottants qui le précèdent
+*/
+small {
+    font-size: 13px;
+    font-style: italic;
+}
+
+
+/* 
+*
+*
+et les sélecteurs d'ordre header
+*
+*
+*/
+
+header {
+    height: 120px;
+}
+
+header nav {
+    float: right; /* on va faire floater le nav à gauche */
+    margin-top: 50px;
+} /* Header imbriqué, comme ça je peux jouer avec le nav du header en css */ 
+
+header nav ul li {
+    float: left;
+    display: inline-block; /*Aligner en block*/  
+}/*Chacun des éléments qui se trouvent dans un nav, qui se trouvent dans un ul, et qui se trouve dans un li, je vais les appliquer un style*/
+
+header nav ul li a {
+    text-transform: uppercase; /*Mettre en majuscule les mots*/
+    font-weight: bold; /*Mettre en gras*/
+    margin-right: 50px; /*pour les espacement entre mots*/
+}
+
+
+/*    ma-photo     */
+
+#ma-photo{
+    height: 600px;
+    background: url('images/qui suis je.png') no-repeat top right;
+    margin:  0 250px 50px 200px;
+    padding: 0;
+    border-radius: 10px;
+}
+
+#ma-photo h2 {
+    font-weight: normal;
+    text-transform: capitalize;
+    text-align: left;
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 30px;
+    margin-right: 10px;
+    color: #66ccff;
+}
+
+#label-1, #label-2, #label-3 {
+    margin:  100px 20px;
+    text-align: left;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+input[type="text"]{
+    padding: 10px;
+    font-size: 20px;
+    margin-right: 20px;
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+
+
+/*    Desciption      */
+
+#desciption {
+    text-align: justify;
+}
+
+#desciption h3 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#desciption p {
+    margin-bottom: 30px;
+}
+
+
+/*    loisirs      */
+
+
+#loisirs {
+    padding: 20px 0;
+    text-align: center;
+}
+
+#loisirs h3 {
+    margin-bottom: 30px;
+}
+
+#loisirs h4 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: blue;
+}
+
+.image {
+    margin-bottom: 40px;
+    background: no-repeat top right;
+}
+
+#loisirs article {
+    width: 460px;
+    height: 270px;
+    float: left;
+    border-radius: 20px;
+}
+
+.overlay {
+    background-color: white;
+    height: 100%;
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+}
+
+article h4 {
+    color: black;
+    border-bottom: 5px solid #ddd; /* mettre le tiret solide */ 
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#loisirs p {
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.button{
+    display: block;/*si on veut que le width et height fonctionne ensebmle */
+    width: 120px;
+    height: 50px;
+    background-color: orchid;
+    color: black;
+    font-size: 20px;
+    margin: 0 auto; /*Mettre un margin de 0 et avec auto le centrer*/
+    line-height: 50px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.button:hover {
+    background: rgb(255,215,0);
+} /*Permet de transformer en bleu le boutton quand on passe dessus*/
+
+
+
+/*    FOOTER      */
+footer {
+    height: 260px; 
+    position: 0px;
+  
+}
+
+footer h1 {
+    color: green;
+    text-align: center; 
+}
+
+.elfartouni {
+    text-align: center;
+    font-weight: bold;
+    padding-top: 30px;
+    margin-bottom: 20px;
+    color: #777;
+    font-size: 12px;
+    background-color: #1f1f1f;
+    border-top: 1px solid #3a3a3a;
+    position: fixed;
+    bottom: 0px;
+}

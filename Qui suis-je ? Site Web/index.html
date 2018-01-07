@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href="styles.css" rel="stylesheet">
+        
+        <!--Nouvelle police declarer-->
+        <link href='http://fonts.googleapis.com/css?family=Crete+Round' rel="stylesheet">
+        <title>Qui suis-je ?</title>
+    
+    </head>
+    
+    
+    <body>
+        <header>
+            
+            <!-- Creation d'un contenair invisible avec un div, et vu que la div n'est pas unique, je crée une classe -->
+            <div class="wrapper">
+                <nav>
+                    <ul>   
+                        <li><a href="https://www.linkedin.com/in/el-fartouni/">Vers mon Linkidin</a></li>
+                        <li><a href="https://github.com/El-Fartouni">Vers mon Github</a></li> 
+                    </ul>
+                </nav>  
+            </div>
+        </header>
+        
+        <section id="ma-photo">
+            <div class="wrapper">
+                <h2>La personne à droite, <br><strong>c'est moi : </strong></h2>
+                
+                  <div class="wrapper">
+                <ul>
+                    <form>
+                        <li id="label-1"> <label for="name">Nom :</label> <input type="text" id="name" placeholder="DAMAR ALI"> </li>
+                                
+                        <li id="label-2"><label for="firstName">Prenom : </label> <input type="text" id="firstName" placeholder="El-Fartouni"> </li>
+
+                        <li id="label-3"><label for="email">Email :</label>
+                        <input type="text" id="email" placeholder="elfartouni@yahoo.fr"></li>
+                    </form>
+                </ul>        
+            </div> 
+            </div> 
+        </section>
+
+        <section id="desciption">    
+            <div class="wrapper">
+                <h3>Bref description sur moi</h3>
+                
+                <!--Vu que El-Fartouni a une couleur différente du texte et qu'elle est aussi dans le footer après, je préfère créer une classe -->
+                    <p> Je m'appelle <span class="salmon">El-Fartouni</span> et j'ai un parcours professionnel atypique vu que <strong>j'ai un diplôme en Master 2 en Biologie Cellulaire, Physiologie et Pathologie.</strong> Et après obtention de ce diplôme, j'ai voulu avoir un autre diplôme. Comme certains de mes collègues étaient dans l'informatique, ils me parlaient souvent de ce qu'ils faisaient, et j'ai commencé à être intéressé par leurs métiers qui étaient en lien avec <strong>l'informatique, d'ou mon intérêt.</strong> Le premier déclic que j'ai eu été vers le deuxième mois de formation intensif que je faisais après la réussite d'un projet personnelle, la joie que m'a procuré cette réussite a encore augmenté mon intérêt pour l'informatique.</p> 
+            </div>
+        </section>
+        
+        <section id="loisirs">
+            <div class="wrapper"> 
+                <h3>Mes loisirs</h3>
+                
+                <article style="background-image: url(images/cinemas.jpg)" class="image" >
+                    <div class="overlay">
+                        <h4>Cinémas</h4>
+                        <p><small>Dr Banner, un de mes personnages de film préféré.</small></p>
+                        <a href="https://fr.wikipedia.org/wiki/Hulk" class="button">Plus d'infos</a>
+                    </div>   
+                </article>
+                
+                <article style="background-image: url(images/lectures.jpg)" class="image">
+                    <div class="overlay">
+                        <h4>Lecture</h4>
+                        <p><small>Les liaisons dangereuses de Pierre Choderlos de Laclos. Un  livre que je considere comme étant LE LIVRE qu'une personne doit lire. </small></p>
+                        <a href="https://fr.wikipedia.org/wiki/Les_Liaisons_dangereuses" class="button">Plus d'infos</a>
+                    </div>   
+                </article>
+                
+                <article style="background-image: url(images/TED.jpg)" class="image">
+                    <div class="overlay">
+                        <h4>TED</h4>
+                        <p><small>Pour avoir une bonne culture, je vous conseil de regarder des video sur TED.</small></p>
+                        <a href="https://www.ted.com/" class="button">Plus d'infos</a>
+                    </div>   
+                </article>
+                
+                <article style="background-image: url(images/benevolat.png)" class="image" >
+                    <div class="overlay">
+                        <h4>Benevolt</h4>
+                        <p><small>J'aime beaucoup aider les autres, d'où mon envie de faire souvent du bénévolat.</small></p>
+                        <a href="https://www.tousbenevoles.org/contacter-un-conseiller?gclid=EAIaIQobChMIvZiumPLD2AIVirztCh3UqwqtEAAYASAAEgJYhfD_BwE" class="button" type="button">Plus d'infos</a>
+                    </div>   
+                </article>
+                
+                <div class="clear"></div>    
+            </div>   
+        </section>
+        
+        <section id="Bonne année">
+            <div class="wrapper"></div> 
+        </section>
+        
+        <footer> 
+            <div class="wrapper">
+                <h1>Maintenant, on peut dire que vous me connaissez en partie.</h1>
+                
+                <div class="elfartouni"> Donc si vous voulez prendre contact avec moi n'hesitez pas. Fait par <span class="salmon">Damar Ali El-Fartouni</span>, pour tout renseignement n'hesitez pas à me contacter au <span class="salmon">06.38.55.55.84</span></div>
+            </div> 
+        </footer>
+    </body>
+</html>
